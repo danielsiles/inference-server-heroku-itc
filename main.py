@@ -13,11 +13,11 @@ features = ["age", "sex", "cp", "trestbps", "chol", "fbs", "restecg", "thalach",
 
 
 def load_model():
-    return pickle.loads(load("./../lr.model"))
+    return pickle.loads(load("./lr.model"))
 
 
 def load_preprocessing():
-    return pickle.loads(load("./../scaler.preprocessing"))
+    return pickle.loads(load("./scaler.preprocessing"))
 
 
 @app.route('/')
