@@ -20,6 +20,11 @@ def load_preprocessing():
     return pickle.loads(load("./../scaler.preprocessing"))
 
 
+@app.route('/')
+def hello_world():
+    return 'Test route'
+
+
 @app.route('/predict_single')
 def predict_single():
     lrm = load_model()
