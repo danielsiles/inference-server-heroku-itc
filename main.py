@@ -3,7 +3,6 @@ import os
 
 from flask import Flask, request, jsonify
 from joblib import load
-
 import pickle
 
 app = Flask(__name__)
